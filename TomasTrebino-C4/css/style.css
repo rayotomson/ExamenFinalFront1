@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+}
+button{
+    background-color: rgb(242, 95, 58);
+    border: 0px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px 10px;
+    padding: 12px 30px;
+    border-radius: 22px;
+    cursor: pointer;
+    width: 134px;
+    height: 44px;
+}
+/*en esta seccion agregar los cambios cuando se posa el cursor*/
+button:hover {
+    background-color: rgb(255, 239, 234);
+        
+}
+#button-footer{
+    background-color: white;
+    color:rgb(242, 95, 58);
+}
+/*cambios boton footer color inverso a los demas botones*/
+/*#button-footer:hover {
+}*/
+a{
+    text-decoration: none;
+    /*color: rgba(0, 0, 0, 100) para sacar el color azul*/
+}
+
+header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.navegador{
+    display: flex; 
+    font-size: 8px;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 50px;
+
+}
+header ul{
+    width: 500px;
+    list-style-type: none;
+}
+
+/*ol{
+    list-style-type: decimal-leading-zero;
+}*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+main section{
+    width: 40%;
+}
+main section ol li p {
+    color:rgb(179, 178, 183);
+    font-size: 16px;
+}
+.section1{
+    position: relative;
+    top: -150px;
+}
+.section3{
+    position: relative;
+    top: -100px;
+}
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+section ol li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    counter-increment: item;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+/*h6{
+    font-size: 10px;
+}*/
+
+ol li p{
+    position: relative;
+    left: 75px;
+}
+
+ol li:before {
+    padding: 0px 0px 0px 0px;
+    margin-right: 20px;
+    content: "0" counter(item);
+    background:rgb(242, 95, 58);
+    border-radius: 30px;
+    color: white;
+    height: 30px;
+    width: 50px;
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.h-cards{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(249, 249, 249);
+    margin: 0px 35px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    text-align: center;
+    font-size: 10px;
+    /*background-color: rgb(249, 249, 249);*/
+}
+
+.cards img {
+    width: 70px;
+    position: relative;
+    top: -25px;
+}
+.cards p{
+    color: rgb(143, 148, 167);
+    width: 300px;
+}
+.button-Cards{
+    display: flex;
+    justify-content: center;
+    
+}
+footer{
+    margin-top: 100PX;
+}
+.footer-up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*font-size: 40px;*/
+    /*text-align:left;*/
+    /*color: white;*/
+    background-color: rgb(242, 95, 58);
+    height: 224px;
+    padding-left: 50PX;
+    padding-right: 50PX;
+}
+#h2footer{
+    text-align: left;
+    font-size: 40px;
+    width: 438px;
+    color: white;
+}
+.footer-down{
+    display: flex;
+    padding-top: 20px;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 247px;
+}
+#Logo-redes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+#iconos-redes:hover{
+    fill: aqua;
+    background-color: orange;
+    /*display: none;*/
+}
+.paginas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 247px;
+    width: 500px;
+    
+}
+.paginas li a{
+    color:white;
+}
+
+
+footer article ul li{
+    padding: 8px;
+}
+
+.form-cr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*form input {
+    height: 44px;
+    border-radius: 22px;
+    border: 2px solid orange;
+    margin: 8px 0px;
+}*/
+
+form input  {
+    height: 44px;
+    border-radius: 22px;
+    border: 2px solid ;
+    margin: 8px 0px;
+}
+form input:focus{
+    outline:none;
+    /*outline: 2px solid rgb(242, 95, 58);*/
+    border: 2px solid rgb(242, 95, 58) ;
+}
+
+.CR{
+    color: white;
+}
+
+
+/*
+# Guía de estilo de front-end
+
+## Diseño
+
+Los diseños se crearon con los siguientes anchos:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+## Colores
+
+### Primario
+
+Rojo brillante: rgb (242, 95, 58)
+Azul oscuro: rgb (35, 44, 81)
+
+### Neutro
+
+Azul grisáceo oscuro: rgb (143, 148, 167)
+Azul muy oscuro: rgb (29, 30, 37)
+Rojo muy pálido: rgb (255, 239, 234)
+Variante gris claro: rgb (249, 249, 249)
+
+## Tipografia
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Be Vietnam](https://fonts.google.com/specimen/Be+Vietnam)
+- Weights: 400, 500, 700
+
+## Icons
+
+Para los íconos sociales, puede usar los íconos provistos o una biblioteca de íconos de fuentes. Ej:
+
+- [Font Awesome](https://fontawesome.com)
+
+*/
