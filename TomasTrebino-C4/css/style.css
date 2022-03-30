@@ -185,11 +185,11 @@ footer{
     justify-content: space-between;
     padding: 20px 50px;
 }
-#iconos-redes:hover{
+/*#iconos-redes:hover{
     fill: aqua;
     background-color: orange;
-    /*display: none;*/
-}
+    display: none;
+}*/
 .paginas{
     display: flex;
     flex-direction: column;
@@ -200,11 +200,9 @@ footer{
     width: 500px;
     
 }
-.paginas li a{
+.paginas li a {
     color:white;
 }
-
-
 footer article ul li{
     padding: 8px;
 }
@@ -238,6 +236,25 @@ form input:focus{
 .CR{
     color: white;
 }
+
+div a img:hover{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    transform: scale(2);
+
+}
+@media screen and (max-width:375px) {
+    .navegador{
+        display: none;
+        
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+} 
 
 
 /*
